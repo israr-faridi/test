@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    background-color: #F2295B;
+}
+
 :root {
     --text-color: #415161;
     --secondary-color: #F5F5F5;
@@ -50,6 +54,7 @@ nav ul li a {
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 nav ul li a:hover {
@@ -67,6 +72,87 @@ nav ul li a:hover {
 }
 
 
+.hero {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_data {
+    width: 50%;
+}
+
+.hero_data h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.explore_btn {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.explore_btn a {
+    border: 1px solid var(--text-color);
+    padding: 10px 20px;
+    color: var(--text-color);
+    border-left: none;
+}
+
+.explore_btn a span {
+    margin-left: 10px;
+}
+
+.explore_btn img {
+    width: 100%;
+}
+
+.hero_img{
+    width: 50%;
+}
+.hero_img img{
+    width: 100%;
+}
+.gallery {
+    margin-top: 50px;
+}
+
+.box p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    width: 100%;
+    color: var(--text-color);
+}
+.gallery1 {
+    background-position: bottom left;
+    padding: 30px 25px;
+    background-image: url(img/gallery1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery2{
+    background-image: url(img/gallery2.jpg);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery3{
+    background-image: url(img/gallery3.jpg);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.gallery4{
+    background-image: url(img/gallery4.jpg);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
 @media screen and (max-width: 994px) {
     nav {
         display: none !important;
@@ -77,7 +163,45 @@ nav ul li a:hover {
         border: 1px solid var(--primary-color);
         background-color: var(--primary-color);
     }
-    .hambar i{
+
+    .hambar i {
+        color: #fff;
+        padding: 8px 10px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero_data{
+        width: 100%;
+    }
+    .hero_img{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .hero_data h1 {
+        font-size: 3rem;
+    }
+    
+    
+}
+@media screen and (max-width: 403px) {
+    .explore_btn {
+        width: 100% !important;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 948px) {
+    nav {
+        display: none !important;
+    }
+
+    .hambar {
+        display: inline-block;
+        border: 1px solid var(--primary-color);
+        background-color: var(--primary-color);
+    }
+
+    .hambar i {
         color: #fff;
         padding: 8px 10px;
     }

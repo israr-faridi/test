@@ -152,6 +152,24 @@ nav ul li a:hover {
     height: 250px;
     background-repeat: no-repeat;
     background-size: cover;  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+.gallery4 h4{
+    color: #415161;
+    font-weight: 800;
+}
+.gallery4 h4::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 250px;
+    background-color: #f5f5f536;
 }
 @media screen and (max-width: 994px) {
     nav {
